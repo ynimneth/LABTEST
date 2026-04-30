@@ -27,6 +27,11 @@ const itemSchema = new mongoose.Schema(
       default: "",
       trim: true,
     },
+    country: {
+      type: String,
+      required: [true, "Country is required"],
+      trim: true,
+    },
   },
   { timestamps: true }
 );
